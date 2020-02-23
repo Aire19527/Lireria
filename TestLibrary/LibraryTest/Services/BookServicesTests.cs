@@ -88,30 +88,7 @@ namespace TestLibrary.Domain.Services.Tests
             var result = _IBookServices.DeleteBook(100);
             Assert.IsTrue(result);
         }
-
-        [TestMethod()]
-        public void DeleteBookIsFalseTest()
-        {
-            var result = _IBookServices.DeleteBook(1000);
-            Assert.IsFalse(result);
-        }
-
-        //[TestMethod()]
-        //public void UpdateBookTest()
-        //{
-        //    BookEntity data = new BookEntity
-        //    {
-        //        Title = "Mock_Title",
-        //        IdEditorial = 100,
-        //        Author = "MockAuthor",
-        //        Cost = 100,
-        //        Date = DateTime.Now,
-        //        IdBook = 100,
-        //        SuggestedPrice = 200,
-        //    };
-        //    var result = _IBookServices.UpdateBook(data);
-        //    Assert.IsTrue(result);
-        //}
+       
 
         [TestMethod()]
         public void GetAllBookTest()
