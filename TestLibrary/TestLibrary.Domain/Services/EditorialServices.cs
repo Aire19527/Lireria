@@ -38,8 +38,8 @@ namespace TestLibrary.Domain.Services
 
         public bool DeleteEditorial(int idEditorial)
         {
-            _unitOfWork.BookRepository.Delete(idEditorial);
-            return  _unitOfWork.Save() > 0;
+            _unitOfWork.EditorialRepository.Delete(idEditorial);
+            return _unitOfWork.Save() > 0;
         }
 
         public bool UpdateEditorial(EditorialEntity data)
