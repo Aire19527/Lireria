@@ -17,6 +17,7 @@ namespace TestLibrary.Domain.Services
 
         public BookEntity GetBook(int idBook)
         {
+
             BookEntity book = _unitOfWork.BookRepository.FirstOrDefault(b => b.IdBook == idBook,
                                                                            b => b.Editorial);
             return book;
